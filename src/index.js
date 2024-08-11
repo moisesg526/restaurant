@@ -1,15 +1,18 @@
 import _ from "lodash";
 import "./style.css";
+import Restautant from "./restaurant.jpg";
 
 const content = document.querySelector("#content");
-document.body.appendChild(content);
 
 function component() {
   const h1 = document.createElement("h1");
+  h1.textContent = "Restaurant";
 
-  h1.innerText = "Restaurant";
+  const background = new Image();
+  background.src = Restautant;
 
+  element.appendChild(background);
   return h1;
 }
 
-document.content.appendChild(component());
+content.appendChild(component());

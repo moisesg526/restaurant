@@ -1,3 +1,12 @@
 #content {
-    background-color: black;
+    background: url("./restaurant.jpg");
+    background-color: #000
+}
+
+h1 {
+    color: #786578;
+}
+
+nav {
+    color: aqua;
 }
