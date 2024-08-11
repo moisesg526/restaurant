@@ -1,12 +1,32 @@
-#content {
-    background: url("./restaurant.jpg");
-    background-color: #000
+body {
+    background-image: url("./restaurant.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #000;
+    padding: 2rem 1rem;
 }
 
 h1 {
-    color: #786578;
+    color: #ffffff;
 }
 
 nav {
     color: aqua;
+}
+
+button {
+    border: none;
+    border-radius: solid;   
+    color: #fff;
+    background-color: #000;
+    font-size: 1rem;
+}
+
+#reservation {
+    border: solid 1px #fff;
+    padding: 0.5rem;
+}
+
+#content {
 }
