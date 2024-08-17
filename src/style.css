@@ -78,3 +78,11 @@ img {
   height: 15rem;
   border-radius: 8px;
 }
+
+footer {
+  clear: both;
+  display: flex;
+  justify-content: center;
+  margin-top: 22rem;
+
+}

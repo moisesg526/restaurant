@@ -4,6 +4,7 @@ import DarkMeal from "./dark-meal.jpg";
 import "./style.css";
 
 const content = document.querySelector("#content");
+const body = document.querySelector("body");
 
 function component() {
   const div = document.createElement("div");
@@ -29,6 +30,12 @@ function component() {
   darkMeal.src = DarkMeal;
   imageDiv.appendChild(darkMeal);
   imageDiv.appendChild(dish);
+
+  const footer = document.createElement("footer");
+  body.appendChild(footer);
+  const copyight = document.createElement("p");
+  copyight.textContent = "2024 © Copyright by Moises Gomez";
+  footer.appendChild(copyight);
 }
 
 content.appendChild(component());
