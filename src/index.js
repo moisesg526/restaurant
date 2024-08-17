@@ -1,4 +1,5 @@
 import _ from "lodash";
+import Dish from "./dish.jpg";
 import "./style.css";
 
 const content = document.querySelector("#content");
@@ -11,6 +12,10 @@ function component() {
   const h1 = document.createElement("h1");
   h1.textContent = "The Velvet Fork";
   div.appendChild(h1);
+
+  const dish = new Image();
+  dish.src = Dish;
+  div.appendChild(dish);
 
   const p = document.createElement("p");
   p.textContent =

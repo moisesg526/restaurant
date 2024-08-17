@@ -147,7 +147,18 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\nconst content = document.querySelector(\"#content\");\n\nfunction component() {\n  const div = document.createElement(\"div\");\n  div.setAttribute(\"id\", \"info\");\n  content.appendChild(div);\n\n  const h1 = document.createElement(\"h1\");\n  h1.textContent = \"The Velvet Fork\";\n  div.appendChild(h1);\n\n  const p = document.createElement(\"p\");\n  p.textContent =\n    \"Welcome to The Velvet Fork, where the ambiance is as rich as the flavors. Indulge in a culinary experience like no other, surrounded by warm, ambient lighting and elegant décor that sets the stage for unforgettable moments. Whether you're savoring a romantic dinner or enjoying a night out with friends, our carefully crafted dishes and sophisticated atmosphere promise to leave you wanting more. Discover the perfect blend of luxury and comfort at The Velvet Fork.\";\n  div.appendChild(p);\n}\n\ncontent.appendChild(component());\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _dish_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dish.jpg */ \"./src/dish.jpg\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\nconst content = document.querySelector(\"#content\");\n\nfunction component() {\n  const div = document.createElement(\"div\");\n  div.setAttribute(\"id\", \"info\");\n  content.appendChild(div);\n\n  const h1 = document.createElement(\"h1\");\n  h1.textContent = \"The Velvet Fork\";\n  div.appendChild(h1);\n\n  const dish = new Image();\n  dish.src = _dish_jpg__WEBPACK_IMPORTED_MODULE_1__;\n  div.appendChild(dish);\n\n  const p = document.createElement(\"p\");\n  p.textContent =\n    \"Welcome to The Velvet Fork, where the ambiance is as rich as the flavors. Indulge in a culinary experience like no other, surrounded by warm, ambient lighting and elegant décor that sets the stage for unforgettable moments. Whether you're savoring a romantic dinner or enjoying a night out with friends, our carefully crafted dishes and sophisticated atmosphere promise to leave you wanting more. Discover the perfect blend of luxury and comfort at The Velvet Fork.\";\n  div.appendChild(p);\n}\n\ncontent.appendChild(component());\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/dish.jpg":
+/*!**********************!*\
+  !*** ./src/dish.jpg ***!
+  \**********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"457e447721227da5eaf3.jpg\";\n\n//# sourceURL=webpack://restaurant/./src/dish.jpg?");
 
 /***/ }),
 
