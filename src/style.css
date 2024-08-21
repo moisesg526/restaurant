@@ -11,6 +11,9 @@ h1 {
   color: #ffffff;
 }
 
+header {
+}
+
 nav {
   color: rgb(0, 0, 0);
   display: flex;
@@ -18,10 +21,11 @@ nav {
 }
 
 #logo {
+  padding-left: 10rem;
   width: 8rem;
   height: 4rem;
   border-radius: 4px;
-  padding-right: 4rem;
+  filter: drop-shadow(2px 4px 8px #393939);
 }
 
 button {
@@ -84,5 +88,4 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 22rem;
-
 }

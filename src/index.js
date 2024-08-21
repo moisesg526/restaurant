@@ -1,12 +1,19 @@
 import _ from "lodash";
 import Dish from "./dish.jpg";
 import DarkMeal from "./dark-meal.jpg";
+import TheVelvetFork from "./the-velvet-fork.jpg";
 import "./style.css";
 
 const content = document.querySelector("#content");
 const body = document.querySelector("body");
+const nav = document.querySelector("nav");
 
 function component() {
+  const logo = new Image();
+  logo.setAttribute("id", "logo");
+  logo.src = TheVelvetFork;
+  nav.appendChild(logo);
+
   const div = document.createElement("div");
   div.setAttribute("id", "info");
   content.appendChild(div);

@@ -13,6 +13,10 @@ module.exports = {
     filename: "bundle.js",
     clean: true,
   },
+  devtool: "eval-source-map",
+  devServer: {
+    watchFiles: ["./src/index.html"],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
@@ -23,6 +27,10 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
