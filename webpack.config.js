@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { Stats } = require("webpack");
 
 module.exports = {
   mode: "development",
@@ -12,6 +13,9 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
     clean: true,
+  },
+  stats: {
+    children: true,
   },
   devtool: "eval-source-map",
   devServer: {
