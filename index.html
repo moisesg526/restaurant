@@ -1,68 +1,24 @@
-<head><script defer src="bundle.js"></script></head>Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module not found: Error: Can't resolve 'html-loader' in '/Users/moisesg526/Desktop/the-odin-project/restaurant'  ModuleNotFoundError: Module not found: Error: Can't resolve 'html-loader' in '/Users/moisesg526/Desktop/the-odi  n-project/restaurant'
-      at /Users/moisesg526/Desktop/the-odin-project/restaurant/node_modules/webpack/lib/Compilation.js:2100:28
-      at /Users/moisesg526/Desktop/the-odin-project/restaurant/node_modules/webpack/lib/NormalModuleFactory.js:90  4:13
-      at eval (eval at create (/Users/moisesg526/Desktop/the-odin-project/restaurant/node_modules/tapable/lib/Hoo  kCodeFactory.js:33:10), <anonymous>:10:1)
-      at /Users/moisesg526/Desktop/the-odin-project/restaurant/node_modules/webpack/lib/NormalModuleFactory.js:34  1:22
-      at eval (eval at create (/Users/moisesg526/Desktop/the-odin-project/restaurant/node_modules/tapable/lib/Hoo  kCodeFactory.js:33:10), <anonymous>:9:1)
-      at /Users/moisesg526/Desktop/the-odin-project/restaurant/node_modules/webpack/lib/NormalModuleFactory.js:63  9:15
-      at /Users/moisesg526/Desktop/the-odin-project/restaurant/node_modules/webpack/lib/NormalModuleFactory.js:15  1:11
-      at /Users/moisesg526/Desktop/the-odin-project/restaurant/node_modules/webpack/lib/NormalModuleFactory.js:71  5:8
-      at /Users/moisesg526/Desktop/the-odin-project/restaurant/node_modules/neo-async/async.js:2830:7
-      at done (/Users/moisesg526/Desktop/the-odin-project/restaurant/node_modules/neo-async/async.js:2925:13)
-  
-  - Compilation.js:2100 
-    [restaurant]/[webpack]/lib/Compilation.js:2100:28
-  
-  - NormalModuleFactory.js:904 
-    [restaurant]/[webpack]/lib/NormalModuleFactory.js:904:13
-  
-  
-  - NormalModuleFactory.js:341 
-    [restaurant]/[webpack]/lib/NormalModuleFactory.js:341:22
-  
-  
-  - NormalModuleFactory.js:639 
-    [restaurant]/[webpack]/lib/NormalModuleFactory.js:639:15
-  
-  - NormalModuleFactory.js:151 
-    [restaurant]/[webpack]/lib/NormalModuleFactory.js:151:11
-  
-  - NormalModuleFactory.js:715 
-    [restaurant]/[webpack]/lib/NormalModuleFactory.js:715:8
-  
-  - async.js:2830 
-    [restaurant]/[neo-async]/async.js:2830:7
-  
-  - async.js:2925 done
-    [restaurant]/[neo-async]/async.js:2925:13
-  
-  - child-compiler.js:174 
-    [restaurant]/[html-webpack-plugin]/lib/child-compiler.js:174:18
-  
-  - Compiler.js:625 finalCallback
-    [restaurant]/[webpack]/lib/Compiler.js:625:5
-  
-  - Compiler.js:660 
-    [restaurant]/[webpack]/lib/Compiler.js:660:11
-  
-  - Compiler.js:1349 
-    [restaurant]/[webpack]/lib/Compiler.js:1349:17
-  
-  
-  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
-    [restaurant]/[tapable]/lib/Hook.js:18:14
-  
-  - Compiler.js:1345 
-    [restaurant]/[webpack]/lib/Compiler.js:1345:33
-  
-  - Compilation.js:2906 finalCallback
-    [restaurant]/[webpack]/lib/Compilation.js:2906:11
-  
-  - Compilation.js:3215 
-    [restaurant]/[webpack]/lib/Compilation.js:3215:11
-  
-  
-</pre>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Restaurant</title>
+  <script defer src="bundle.js"></script></head>
+  <body>
+    <header>
+      <nav>
+        <button>Home</button>
+        <button>About</button>
+        <button>Menu</button>
+        <button>Contact Us</button>
+        <button><span id="reservation">Reservations</span></button>
+      </nav>
+    </header>
+    <div id="content"></div>
+  </body>
+</html>
