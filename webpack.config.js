@@ -10,22 +10,23 @@ module.exports = {
 
   //define output point
   output: {
-    path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
+    path: path.resolve(__dirname, "dist"),
     clean: true,
   },
-  stats: {
-    children: true,
-  },
+
   devtool: "eval-source-map",
+
   devServer: {
     watchFiles: ["./src/index.html"],
   },
+
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
     }),
   ],
+
   module: {
     rules: [
       {
