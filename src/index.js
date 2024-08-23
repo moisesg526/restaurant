@@ -40,7 +40,7 @@ function component() {
   imageDiv.appendChild(dish);
 
   nav.onclick = function () {
-    return (content.textContent = about());
+    return content.appendChild(about());
   };
 
   const footer = document.createElement("footer");
