@@ -3,6 +3,7 @@ import Dish from "./dish.jpg";
 import DarkMeal from "./dark-meal.jpg";
 import TheVelvetFork from "./the-velvet-fork.jpg";
 import about from "./about";
+import menu from "./menu";
 import "./style.css";
 
 const content = document.querySelector("#content");
@@ -40,7 +41,7 @@ function component() {
   imageDiv.appendChild(dish);
 
   nav.onclick = function () {
-    return content.appendChild(about());
+    return content.appendChild(menu());
   };
 
   const footer = document.createElement("footer");

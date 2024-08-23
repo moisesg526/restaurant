@@ -1,10 +1,10 @@
-export default function menu() {
-  function elementCreator(element) {
-    return () => {
-      return document.createElement(element);
-    };
-  }
+// function elementCreator(element) {
+//   return () => {
+//     return document.createElement(element);
+//   };
+// }
 
+export default function menu() {
   let appetizers = `CESAR SALAD $19
     STEAK TARTARE $28
     GREEN SALAD $16
@@ -20,7 +20,7 @@ export default function menu() {
     SKIRT STEAK $52
     PORTER HOUSE $180
     ALASKAN HALIBUT $52
-    CHARRED LEMON CHICKEN %38
+    CHARRED LEMON CHICKEN $38
     `;
 
   let desert = `CREME BRULEE $16
@@ -29,19 +29,32 @@ export default function menu() {
     SORBET or ICE CREAM $12
     `;
 
-  let content = elementCreator("div");
+  let content = document.createElement("div");
 
-  let h2 = elementCreator("h2");
+  let h2 = document.createElement("h2");
   h2.textContent = "MENU";
   content.appendChild(h2);
 
-  let meal = elementCreator("h3");
+  let meal = document.createElement("h3");
   meal.textContent = "Appetizers";
   content.appendChild(meal);
+  let appetizerDish = document.createElement("p");
+  appetizerDish.textContent = appetizers;
+  content.appendChild(appetizerDish);
 
-  let dish = elementCreator("p");
-  dish.textContent = appetizers;
+  let h2Entree = document.createElement("h3");
+  h2Entree.textContent = "Entree"
+  content.appendChild(h2Entree);
+  let dish = document.createElement("p");
+  dish.textContent = entrees;
   content.appendChild(dish);
+
+  let h2Desert = document.createElement("h3");
+  h2Desert.textContent = "Desert"
+  content.appendChild(h2Desert);
+  let finalDish = document.createElement("p");
+  finalDish.textContent = desert;
+  content.appendChild(finalDish);
 
   return content;
 }
