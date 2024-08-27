@@ -4,6 +4,8 @@ import DarkMeal from "./dark-meal.jpg";
 import TheVelvetFork from "./the-velvet-fork.jpg";
 import about from "./about";
 import menu from "./menu";
+import contact from "./contact";
+import reservations from "./reservations";
 import "./style.css";
 
 const content = document.querySelector("#content");
@@ -42,7 +44,7 @@ function component() {
 
   nav.onclick = function () {
     content.innerHTML = "";
-    content.appendChild(menu());
+    content.appendChild(reservations());
   };
 
   const footer = document.createElement("footer");
