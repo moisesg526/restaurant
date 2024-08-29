@@ -11,13 +11,19 @@ const content = document.querySelector("#content");
 const body = document.querySelector("body");
 const nav = document.querySelector("nav");
 
+const homeBtn = document.querySelector("#home");
+const aboutBtn = document.querySelector("#about");
+const menuBtn = document.querySelector("#menu");
+const hoursBtn = document.querySelector("#hours");
+const reservationBtn = document.querySelector("#reservation");
+
 function component() {
   const logo = new Image();
   logo.setAttribute("id", "logo");
   logo.src = TheVelvetFork;
   nav.appendChild(logo);
 
-  nav.onclick = function () {
+  aboutBtn.onclick = function () {
     content.innerHTML = "";
     content.appendChild(hours());
   };
