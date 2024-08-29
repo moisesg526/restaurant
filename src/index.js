@@ -23,9 +23,29 @@ function component() {
   logo.src = TheVelvetFork;
   nav.appendChild(logo);
 
+  homeBtn.onclick = function () {
+    content.innerHTML = "";
+    content.appendChild(home());
+  };
+
   aboutBtn.onclick = function () {
     content.innerHTML = "";
+    content.appendChild(about());
+  };
+
+  menuBtn.onclick = function () {
+    content.innerHTML = "";
+    content.appendChild(menu());
+  };
+
+  hoursBtn.onclick = function () {
+    content.innerHTML = "";
     content.appendChild(hours());
+  };
+
+  reservationBtn.onclick = function () {
+    content.innerHTML = "";
+    content.appendChild(reservations());
   };
 
   const footer = document.createElement("footer");
@@ -33,6 +53,8 @@ function component() {
   const copyight = document.createElement("p");
   copyight.textContent = "2024 © Copyright by Moises Gomez";
   footer.appendChild(copyight);
+
+  home();
 }
 
-content.appendChild(component());
+component();
