@@ -1,5 +1,3 @@
-import "./style.css";
-
 export default function about() {
   let aboutDiv = document.createElement("div");
   aboutDiv.setAttribute("div", "aboutDiv");
